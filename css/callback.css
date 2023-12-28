@@ -1,0 +1,125 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    position: relative;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.container-contact{
+    background-color: #272727;
+    padding: 40px 0px 40px 0px;
+}
+
+.container-contact h2{
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    font-size: 2.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dcdcdc73;
+    
+}
+
+.container-contact .contacts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 80px;
+}
+
+.contacts .contact-item{
+    background-color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 40px;
+    flex: 1;
+    text-transform: uppercase;
+}
+
+.contacts .contact-item .contact-name{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contacts .contact-item .contact-body{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contacts .contact-item span{
+    color: var(--color-dark);
+    text-align: center;
+}
+
+.container-form{
+    height: 100%;
+    background-image: url("/img/map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.callback-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.callback-form h2{
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.callback-form p{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.callback-form input, .callback-form textarea{
+    width: 80%;
+    padding: 3px 5px;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 500;
+    resize: none;
+}
+
+.callback-form button{
+    --slice: 8px;
+    padding: 15px 50px;
+    background-color: var(--color-darkyelow);
+    clip-path: polygon(0 var(--slice), var(--slice) 0, calc(100% - var(--slice)) 0, 100% var(--slice), 100% calc(100% - var(--slice)), calc(100% - var(--slice)) 100%, var(--slice) 100%, 0 calc(100% - var(--slice))); 
+    transition: all 0.4s ease;
+    box-shadow: 0 0 2rem var(--color-light);
+}
+
+.callback-form button:hover{
+    --slice: 14px;
+}
+
+footer{
+    flex-grow: 0;
+}

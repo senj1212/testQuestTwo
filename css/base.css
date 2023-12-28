@@ -1,0 +1,102 @@
+html{
+    --color-dark: #131313;
+    --color-light: #DCDCDC;
+    --color-darkblue: #1E3163;
+    --color-darkyelow: #5E4A18;
+    --height-header: 80px;
+    font-size: 18px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--color-light);
+border-radius: 10px;
+}
+
+span, p, h1, h2, h3, h4, a, button, textarea, input{
+    color: var(--color-light);
+    font-family: 'Kodchasan', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 80px;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #dcdcdc73;
+}
+
+header.dark{
+    background-color: #111111;
+    border-bottom: 1px solid #111111;
+}
+
+body{
+    background-color: var(--color-dark);
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.headnav {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
+}
+
+#headnav-logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+#headnav-logo img{
+    height: 1rem;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: rgb(8, 8, 8)13;
+}
+
+footer span{
+    display: inline-block;
+    padding: 15px 0;
+    opacity: 0.7;
+}

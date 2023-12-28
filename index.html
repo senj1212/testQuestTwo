@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Highway</title>
+</head>
+<body>
+    <header>
+        <ul class="container-xxl headnav">
+            <li class="nav-item" id="headnav-logo"><img src="img/logo.svg" alt="logotype"><a href="index.html">highway</a></li>
+            <li class="nav-item"><button onclick="go_to_about()">about US</button></li>
+            <li class="nav-item"><button onclick="go_to_contact()">contact</button></li>
+            <li class="nav-item"><button onclick="go_to_gallery()">gallery</button></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container-fluid" id="top-container">
+            <div class="title container-xxl">
+                <div class="text-fild">
+                    <img src="img/logo.svg" alt="logotype">
+                    <h1>highway</h1>
+                    <span>Canadian Armored Vehicle <br> Manufacturer</span>
+                </div>
+                <div class="buttons">
+                    <button onclick="go_to_contact()" class="btn-contact">contact</button>
+                    <button onclick="go_to_about()" class="btn-about">learn more</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl container-gallery">
+            <h2 class="container_title">gallery</h2>
+            <div class="grid-gallery">
+                <div class="grid-item"><img src="img/car_1.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="img/car_2.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="img/car_4.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="img/car_8.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="img/car_5.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="img/car_7.jpg" alt="Image 7"></div>
+                <div class="grid-item"><img src="img/car_3.jpg" alt="Image 8"></div>
+                <div class="grid-item"><img src="img/car_6.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="img/car_9.jpg" alt="Image 9"></div>
+                <div class="grid-item"><img src="img/car_10.jpg" alt="Image 9"></div>
+                <div class="grid-item"><img src="img/car_11.jpg" alt="Image 9"></div>
+            </div>
+        </div>
+        <div class="container-xxl container-about">
+            <h2 class="container_title">about</h2>
+            <div class="about-body">
+                <div class="about-text">
+                    <p>Hsghway is a manufacturer specializing in high-end sports cars. Our exquisite range of vehicles is distributed worldwide, catering to government agencies, private security firms, and individual enthusiasts.</p>
+                    <p>The Hsghway lineup boasts a collection of luxurious sports cars, combining style and performance. From sleek SUVs to sophisticated cash-in-transit vehicles, we also offer armored personnel carriers designed for the secure transportation of cargo and the rapid deployment of response teams.</p>
+                    <p>What sets Hsghway apart is our commitment to providing a personalized experience for each client, along with the assurance of our specialists delivering orders promptly and with the highest quality. Our dedicated representatives are prepared to offer more in-depth information about our production and address any inquiries you may have.</p>
+                </div>
+                <div class="about-video">
+                    <iframe src="https://www.youtube.com/embed/EX0AIOfKRBg?si=9B0WR5qVavuIYHKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container-contact">
+            <h2>contanct</h2>
+            <div class="container-xxl contacts">
+                <div class="contact-item">
+                    <img src="img/addres.svg" alt="addres">
+                    <span class="contact-name">ADDRESS</span>
+                    <span class="contact-body">3474 Bode Mountains, Taneshashire, MO 46003</span>
+                </div>
+                <div class="contact-item">
+                    <img src="img/phone.svg" alt="phone">
+                    <span class="contact-name">phone</span>
+                    <span class="contact-body">+1 413-623-8537</span>
+                </div>
+                <div class="contact-item">
+                    <img src="img/email.svg" alt="email">
+                    <span class="contact-name">E-MAIL</span>
+                    <span class="contact-body">domenic.keebler@gmail.com</span>
+                </div>
+            </div>
+            <div class="container-xxl socials">
+                <div class="social-item">
+                    <img src="img/twiter.svg" alt="twiter">
+                </div>
+                <div class="social-item">
+                    <img src="img/google.svg" alt="google">
+                </div>
+                <div class="social-item">
+                    <img src="img/youtube.svg" alt="youtube">
+                </div>
+                <div class="social-item">
+                    <img src="img/linkedin.svg" alt="linkedin">
+                </div>
+                <div class="social-item">
+                    <img src="img/instagram.svg" alt="instagram">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-xxl">
+            <span>© HIGHWAY Manufacturing the cars of the future. All rights reserved.</span>
+        </div>
+    </footer>
+    <div class="callback">
+        <a href="callback.html"><img src="img/callback.svg" alt="callback"></a>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
